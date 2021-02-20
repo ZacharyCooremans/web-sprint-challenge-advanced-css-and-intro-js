@@ -219,7 +219,7 @@ console.log(artists[2].bio);
 There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
 
 artists[8].name = 'Vincent Van Gogh';
-//console.log(artists[8].name);
+console.log(artists[8].name);
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀  
  Use getArtistByIndex to do the following:
@@ -293,11 +293,12 @@ Use addArtist to do the following:
 
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
-function addArtist(array, id, name, years, genre, nationality, bio){
-    array.push({id, name, years, genre, nationality, bio})
+function addArtist(array){
+    array.push({id: 20, name: 'Zachary Cooremans', years: '2000 - current day', genre: 'Web Design', nationality: 'American', bio: ' I am just going to put some randome stuff here. I dont really care what it says its just a place holder.'})
+    console.log(array)
     return array;
   }
-//
+
   
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -310,13 +311,13 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 function lotsOfArt(array){
   let newArray = []
   for(let i = 0; i < array.length; i++){
-    console.log(array[i].paintings)
+    //console.log(array[i].paintings)
     if(array[i].paintings > 100){
       newArray.push(array[i].name)
       
     }
   }
-  console.log(newArray)
+  //console.log(newArray)
   return newArray
 }
 
